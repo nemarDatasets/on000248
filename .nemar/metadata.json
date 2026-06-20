@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": " ",
+  "description": "The MNE-Sample-Data dataset comprises simultaneous MEG and EEG recordings acquired from a single subject using a Neuromag Vectorview system at the Martinos Center for Biomedical Imaging. The experiment involved visual stimulation (checkerboard patterns presented to left and right visual fields) and auditory stimulation (tones to left and right ears), with occasional face stimuli requiring motor responses. Structural MRI data from a 1.5 T Siemens scanner and Freesurfer-derived anatomical derivatives are included, providing a comprehensive reference dataset for MEG/EEG analysis and method development.",
+  "methods_description": "MEG and EEG data were acquired simultaneously using a Neuromag Vectorview system with a 60-channel EEG electrode cap. Visual stimuli (checkerboard patterns) were presented to the left and right visual fields with 750 ms inter-stimulus intervals, interspersed with tones to the left or right ear. Occasional face stimuli at the center of the visual field required right index finger key presses. Structural MRI was acquired on a Siemens 1.5 T Sonata scanner using an MPRAGE sequence.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -10,12 +12,48 @@
     },
     "Matti S Hämäläinen": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds000248.v1.2.4",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "MEG"
     },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "visual evoked potentials"
+    },
+    {
+      "term": "auditory evoked potentials"
+    },
+    {
+      "term": "motor response"
+    },
+    {
+      "term": "structural MRI"
+    },
+    {
+      "term": "BIDS"
+    },
+    {
+      "term": "Freesurfer"
+    },
+    {
+      "term": "anatomical derivatives"
+    },
+    {
+      "term": "Neuromag Vectorview"
+    },
+    {
+      "term": "checkerboard stimulation"
+    },
+    {
+      "term": "auditory stimulation"
+    },
+    {
+      "term": "reference dataset"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.1016/j.neuroimage.2014.02.017",
       "identifier_type": "DOI",
@@ -45,6 +83,11 @@
       "identifier": "10.1038/sdata.2018.110",
       "identifier_type": "DOI",
       "relation_type": "IsReferencedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds000248.v1.2.4",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -94,13 +137,13 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "Structural MRI Dataset",
   "modalities": [
     "anat",
     "meg"
   ],
-  "resource_type_specific": "Structural MRI Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "1.8 GB (997 files)"
   ],
   "formats": [
     ".2mm/README",
@@ -172,50 +215,8 @@
     ".volume",
     ".white",
     ".white_avg",
-    ".xfm"
+    ".xfm",
+    ".yml"
   ],
-  "description": "The MNE-Sample-Data dataset comprises simultaneous MEG and EEG recordings acquired from a single subject using a Neuromag Vectorview system at the Martinos Center for Biomedical Imaging. The experiment involved visual stimulation (checkerboard patterns presented to left and right visual fields, occasional central smiley faces) and auditory stimulation (tones to left and right ears), with concurrent structural MRI data acquired on a 1.5 T Siemens scanner. This dataset serves as a canonical reference resource for demonstrating MEG/EEG data processing and analysis workflows using the MNE software suite.",
-  "methods_description": "MEG and EEG data were acquired simultaneously using a Neuromag Vectorview system with a 60-channel EEG electrode cap. Visual stimuli (checkerboard patterns and occasional smiley faces) were presented to the visual field with an inter-stimulus interval of 750 ms, interspersed with auditory tones. Subjects performed a reaction time task (key press with right index finger) in response to central face stimuli. Structural MRI was acquired using a Siemens 1.5 T Sonata scanner with an MPRAGE sequence. Freesurfer was used for anatomical segmentation and MNE tools for BEM surface generation.",
-  "keywords": [
-    {
-      "term": "MEG"
-    },
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "visual evoked potentials"
-    },
-    {
-      "term": "auditory evoked potentials"
-    },
-    {
-      "term": "reaction time"
-    },
-    {
-      "term": "structural MRI"
-    },
-    {
-      "term": "MNE"
-    },
-    {
-      "term": "tutorial dataset"
-    },
-    {
-      "term": "Neuromag Vectorview"
-    },
-    {
-      "term": "Freesurfer"
-    },
-    {
-      "term": "simultaneous MEG-EEG"
-    },
-    {
-      "term": "sample dataset"
-    },
-    {
-      "term": "reference dataset"
-    }
-  ],
-  "source_hash": "615f1bbe2722d0cd632d42841eb78bce483e978225a6ee48b245658438556c50"
+  "source_hash": "3e154a73d877059c0fa5a2319ee4f53980c0f238068981b11ce2469de58ba6a6"
 }
