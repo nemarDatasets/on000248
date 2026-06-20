@@ -1,4 +1,6 @@
-﻿MNE-Sample-Data
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on000248-blue)](https://doi.org/10.82901/nemar.on000248)
+
+MNE-Sample-Data
 ---------------
 
 The MNE software is accompanied by a sample data set. These data were acquired with the Neuromag Vectorview system at MGH/HMS/MIT Athinoula A. Martinos Center Biomedical Imaging. EEG data from a 60-channel electrode cap was acquired simultaneously with the MEG. The original MRI data set was acquired with a Siemens 1.5 T Sonata scanner using an MPRAGE sequence.
