@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": " ",
-  "description": "The MNE-Sample-Data dataset comprises simultaneous MEG and EEG recordings acquired from a single subject using a Neuromag Vectorview system at the Martinos Center for Biomedical Imaging. The experiment involved visual stimulation (checkerboard patterns presented to left and right visual fields) and auditory stimulation (tones to left and right ears), with occasional face stimuli requiring motor responses. Structural MRI data from a 1.5 T Siemens scanner and Freesurfer-derived anatomical derivatives are included, providing a comprehensive reference dataset for MEG/EEG analysis and method development.",
-  "methods_description": "MEG and EEG data were acquired simultaneously using a Neuromag Vectorview system with a 60-channel EEG electrode cap. Visual stimuli (checkerboard patterns) were presented to the left and right visual fields with 750 ms inter-stimulus intervals, interspersed with tones to the left or right ear. Occasional face stimuli at the center of the visual field required right index finger key presses. Structural MRI was acquired on a Siemens 1.5 T Sonata scanner using an MPRAGE sequence.",
+  "description": "The MNE-Sample-Data dataset is a simultaneous MEG and 60-channel EEG recording with an accompanying structural MRI, distributed with the MNE software. Checkerboard patterns were presented to the left and right visual fields, interleaved with tones to the left or right ear, and the subject responded to occasional smiley faces. It serves as a standard example dataset for demonstrating MEG/EEG analysis workflows, and FreeSurfer-derived anatomical surfaces are included.",
+  "methods_description": "Data were acquired with a Neuromag Vectorview MEG system at the MGH/HMS/MIT Athinoula A. Martinos Center, with simultaneous 60-channel EEG. Structural MRI was acquired on a Siemens 1.5 T Sonata scanner using an MPRAGE sequence. Stimuli were checkerboards in the left or right visual field and tones to the left or right ear, with a 750 ms interstimulus interval. The subject pressed a key with the right index finger when a smiley face appeared at the center. FreeSurfer recon-all and MNE BEM and scalp surface tools were used to generate anatomical derivatives.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -20,37 +20,23 @@
       "term": "EEG"
     },
     {
-      "term": "visual evoked potentials"
+      "term": "Magnetoencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
     },
     {
-      "term": "auditory evoked potentials"
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
-      "term": "motor response"
-    },
-    {
-      "term": "structural MRI"
-    },
-    {
-      "term": "BIDS"
-    },
-    {
-      "term": "Freesurfer"
-    },
-    {
-      "term": "anatomical derivatives"
-    },
-    {
-      "term": "Neuromag Vectorview"
-    },
-    {
-      "term": "checkerboard stimulation"
+      "term": "visual stimulation"
     },
     {
       "term": "auditory stimulation"
     },
     {
-      "term": "reference dataset"
+      "term": "MNE-Python"
     }
   ],
   "related_identifiers": [
@@ -70,11 +56,6 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on000248",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.21105/joss.01896",
       "identifier_type": "DOI",
       "relation_type": "IsReferencedBy"
@@ -88,6 +69,11 @@
       "identifier": "10.18112/openneuro.ds000248.v1.2.4",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on000248",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -143,7 +129,7 @@
     "meg"
   ],
   "sizes": [
-    "1.8 GB (997 files)"
+    "1.68 GB (997 files)"
   ],
   "formats": [
     ".2mm/README",
